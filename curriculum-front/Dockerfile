@@ -1,4 +1,5 @@
 FROM node:lts-alpine
+ENV NODE_OPTIONS="--openssl-legacy-provider"
 WORKDIR /usr/src/app
 COPY curriculum-front/package*.json ./
 RUN ls -l
